@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Deisgn Portfolio</title>
+    <link rel="icon" href="immagini/icon.svg">
+    <link rel="stylesheet" href="cssPortfolio.css">
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">BC</a>
+        <button class="menu-toggle" id="mobile-menu" aria-label="Apri Menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <nav  id="nav-menu">
+            <a href="#progetti" class="active">Progetti</a>
+            <a href="#about">Chi sono</a>
+            <a href="#competenze">Competenze</a>
+            <a href="#contatti">Contatti</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-badge">Disponibile per nuove opportunità</div>
+            <h1>
+               <span>Content Creator & Visual Designer</span>
+            </h1>
+            <p class="hero-desc">
+                Progetto e realizzo contenuti visivi per professionisti e realtà creative.
+
+            </p>
+                            
+            <!-- TOOLSET BADGES -->
+            <div class="software-pills">
+                <span>Premiere Pro</span>
+                <span>Illustrator</span>
+                <span>InDesign</span>
+                <span>Photoshop</span>
+                <span>HTML/CSS/JS</span>
+            </div>
+
+            <div class="cta-group">
+                <a href="#progetti" class="btn btn-primary">Guarda i miei lavori</a>
+                <a href="#contatti" class="btn btn-secondary">Contattami</a>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="about-container">
+                <div class="about-image">
+                    <img src="immagini/icon.svg" alt="Brand Identity e Editorial Showcase">
+                </div>
+                <div class="about-text">
+                    <h2>Chi Sono</h2>
+                    <p>
+                    Specializzata nella creazione di contenuti visivi e digitali, ho un'ottima padronanza dei principali strumenti Adobe: Premiere Pro per il montaggio video, Illustrator per la grafica vettoriale e la creazione di loghi, e InDesign per la stampa e l'impaginazione editoriale.
+                    </p>
+                   <p> La mia esperienza comprende anche la progettazione di siti web, mockup ed interfacce UX/UI, competenze che mi permettono di gestire con sicurezza i diversi aspetti di un progetto digitale.                   </p>
+                 
+                </div>
+            </div>
+        </section>
+
+        <section class="projects-section" id="progetti">
+            <div class="section-header">
+                <div class="section-title">
+                    <h2>Progetti</h2>
+                    <p>Una selezione di identity, materiale stampato, merchandising e contenuti multimediali</p>
+                </div>
+            </div>
+
+            <div class="editorial-grid">
+                
+                <!-- ITEM 1: MERCHANDISING -->
+                <div class="grid-item tall" data-modal="modal-merch">
+                    <img src="immagini/bag.png" alt="Merchandising Tote Bag">
+                    <div class="item-overlay">
+
+                        <h3>Apparel & Accessories Line</h3>
+                        <p>Grafiche vettoriali applicate a Tote Bag, T-Shirt e gadget aziendali.</p>
+                    </div>
+                </div>
+                
+                <!-- ITEM 2: EDITORIAL -->
+                <div class="grid-item" data-modal="modal-editorial">
+                    <img src="immagini/book1.png" alt="Impaginazione Editoriale InDesign">
+                    <div class="item-overlay">
+                    
+                        <h3>Editorial & Brand Guidelines</h3>
+                        <p>Impaginazione di cataloghi, brand manual e pubblicazioni cartacee.</p>
+                    </div>
+                </div>
+
+                <!-- ITEM 3: VIDEO -->
+                <div class="grid-item tall" data-modal="modal-video">
+                    <video autoplay loop muted playsinline class="grid-video">
+                        <source src="video/video1.mp4" type="video/mp4">
+                        Il tuo browser non supporta i video HTML5.
+                    </video>
+                    <div class="item-overlay">
+                    <!-- <div class="overlay-tags">
+                            <span class="badge-tag">Premiere Pro</span>
+                            <span class="badge-tag">Foto & Video</span>
+                        </div>-->
+                        <h3>Reel & Promo Video Content</h3>
+                        <p>Shooting, color grading e montaggio per i social media.</p>
+                    </div>
+                </div>
+
+                <!-- ITEM 4: BRAND IDENTITY & WEB -->
+                <div class="grid-item" data-modal="modal-brand">
+                    <img src="immagini/revelation.png" alt="Grafica Vettoriale e Web">
+                    <div class="item-overlay">
+                    
+                        <h3>Brand Identity & Web Site</h3>
+                        <p>Progettazione grafica vettoriale e sviluppo web.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="project-modal" class="modal-overlay">
+                <div class="modal-content">
+                    <button class="modal-close" id="modal-close">&times;</button>
+                    
+                    <div class="modal-body">
+                        <div class="carousel-container">
+                            <div class="carousel-track" id="carousel-track">
+                            </div>
+                            <button class="carousel-btn prev" id="carousel-prev">&#10094;</button>
+                            <button class="carousel-btn next" id="carousel-next">&#10095;</button>
+                        </div>
+                        
+                        <div class="modal-info">
+                            <h3 id="modal-title">Titolo Progetto</h3>
+                            <p id="modal-description">Descrizione approfondita del progetto.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills-section" id="competenze">
+            <div class="section-header">
+                <div class="section-title">
+                    <h2>I Miei Servizi</h2>
+                    <p>Soluzioni visive complete, dal concept digitale alla stampa e alla produzione video</p>
+                </div>
+            </div>
+
+            <div class="skills-grid" id="competenze">
+                <div class="skill-box">
+                    <span class="skill-icon">🎥</span>
+                    <h3>Foto & Video Making</h3>
+                    <p>Ripresi sul campo, shooting fotografici e montaggio video professionale con <strong>Adobe Premiere Pro</strong>. Creazione di reel e promo per i social.</p>
+                </div>
+
+                <div class="skill-box">
+                    <span class="skill-icon">🎨</span>
+                    <h3>Brand & Vector Design</h3>
+                    <p>Progettazione di loghi, illustrazioni e asset vettoriali su <strong>Adobe Illustrator</strong>. Creazione di grafiche per t-shirt, tote bag e merchandise personalizzato.</p>
+                </div>
+
+                <div class="skill-box">
+                    <span class="skill-icon">📖</span>
+                    <h3>Editorial & Print Design</h3>
+                    <p>Impaginazione professionale con <strong>Adobe InDesign</strong>: cataloghi, brochure, volantini, flyer e biglietti da visita pronti per la tipografia.</p>
+                </div>
+
+                <div class="skill-box">
+                    <span class="skill-icon">💻</span>
+                    <h3>Web & Interactive</h3>
+                    <p>Sviluppo di landing page e siti web responsive (HTML/CSS/JS) con un'interfaccia curata nei minimi dettagli e animazioni fluide.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER / CONTACT -->
+  <footer id="contatti">
+        <div class="footer-cta">
+            <h2>Contatti</h2>
+            
+             <a href="mailto:benedetta.catricala@gmail.com" class="btn btn-primary email-link">
+                Scrivimi una email
+             </a>
+        </div>
+
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/benedetta-catrical%C3%A0-259468227/" target="_blank">LinkedIn</a>
+            <a href="https://www.instagram.com/iamblessed_art/" target="_blank">Instagram</a>
+        </div>
+
+        <p class="copyright">&copy; 2026 Benedetta Catricalà, Pisa (PI), Italy</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
