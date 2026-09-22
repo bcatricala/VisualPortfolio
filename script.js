@@ -68,7 +68,9 @@
             media: [
                 "video/video1.mp4",
                 "video/video2.mp4",
-                "video/video3.mp4"
+                "video/video3.mp4",
+                "video/video4.mp4"
+
 
         ]
     },

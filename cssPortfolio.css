@@ -525,7 +525,7 @@ nav a:hover, nav a.active {
 }
 
 .skill-box:hover {
-    border-color: rgba(255, 62, 108, 0.4);
+    border-color: var(--accent-color);
     background: rgba(20, 20, 25, 0.9);
     transform: translateY(-5px);
 }
